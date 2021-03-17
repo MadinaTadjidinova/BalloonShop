@@ -1,13 +1,10 @@
 import Layout from "./components/Layout/Layout";
-import Toolbar from "./components/Toolbar/Toolbar";
-import Nav from "./components/Nav/Nav";
+import  ".App.css"
 function App() {
   return (
     <div className="App">
       <Layout>
-        <Toolbar/>
-        <Nav/>
-      Awsome builder by Keremet Jumabekova
+     <h1>Awsome builder by Madina</h1> 
       </Layout>
     </div>
   );
