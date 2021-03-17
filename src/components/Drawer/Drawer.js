@@ -1,14 +1,15 @@
+import classes from "./Drawer.module.css";
+import Nav from "../Nav/Nav";
 import Logo from "../Logo/Logo";
-import Nav from "../Layout/Nav/Nav";
-import classes from "./Drawer.module.css"
 
-const Drawer = ({}) => {
-    return (
-        <div className={classes.Drawer}>
-            <Logo />
-            <Nav />
-        </div>
-    );
+
+const Drawer = ({ }) => {
+  return (
+    <div className = {classes.Drawer}>
+    <Logo/>
+    <Nav/>
+    </div>
+  )
 }
- 
+
 export default Drawer;
