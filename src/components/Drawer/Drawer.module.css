@@ -5,18 +5,22 @@
     top: 0;
     left: 0;
   
-    
     font-size: 2rem;
     color: white;
     background-color: tomato;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    transition: transform 1s ease-out;
+    transition: transform .3s ease-out;
   }
-
+  
   .open {
-      transform: translateX(0);
+    transform: translateX(0);
   }
-
-  .close{
-      transform: translateX(-260px);
+  .close {
+    transform: translateX(-260px);
+  }
+  
+  @media (min-width: 550px) {
+    .Drawer  {
+      display: none;
+    }
   }
