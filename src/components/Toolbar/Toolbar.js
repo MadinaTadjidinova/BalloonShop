@@ -1,7 +1,7 @@
-import Nav from "../components/Layout/Nav/Nav";
+import Logo from "../Logo/Logo";
+import Nav from "../Nav/Nav";
 import classes from "./Toolbar.module.css";
-import Logo from "../Logo/Logo"
-const Toolbar = ({}) => {
+const Toolbar = () => {
     return (  
         <div className={classes.Toolbar}>
             <Logo />
