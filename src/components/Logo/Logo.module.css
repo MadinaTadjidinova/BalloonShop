@@ -5,16 +5,16 @@
     align-items: center;
   }
   .Logo img {
-    height: 3rem;
+    width: 80px;
+    height: 4rem;
     margin: .5rem;
   }
 
 .Logo div {
-    --fill-color: #7919e6;
+    --fill-color: #ff8800;
     position: relative;
     display: block;
-    padding: 4px 0;
-    font: 700 2.5rem Raleway, sans-serif;
+    font: 700 2rem Raleway, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     -webkit-text-stroke: 2px var(--fill-color);
@@ -26,4 +26,16 @@
 }
 .Logo div:hover{
   background-size: 100%;
+}
+
+@media (max-width: 549px) {
+  .Logo img {
+    width: 60px;
+    height: 4rem;
+    margin: .5rem;
+  }
+
+.Logo div {
+    font: 600 2rem Raleway, sans-serif;
+}
 }
