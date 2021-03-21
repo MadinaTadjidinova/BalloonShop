@@ -12,6 +12,10 @@
   transition: transform .3s ease-out;
 }
 
+.Drawer .content {
+  background: radial-gradient(circle farthest-corner at 100px 50px, #FEFFFF, #00ffdd);
+  }
+
 .open {
   transform: translateX(0);
 }
