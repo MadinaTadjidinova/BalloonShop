@@ -1,0 +1,7 @@
+.BalloonControls {
+    flex: 0 0 250px;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:  rgb(0, 255, 221);;
+    color: white;
+  }
