@@ -1,6 +1,4 @@
 @import url("https://fonts,googleapis.com/css?family=Raleway:400,400i,700");
-@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 .Logo {
     display: flex;
@@ -18,8 +16,6 @@
     position: relative;
     display: block;
     /* font: 700 2rem Raleway, sans-serif; */
-    /* font-family: 'Chango', cursive; */
-    /* font-family: 'Syne Mono', monospace; */
     font: 700 2.5rem Syne Mono, monospace;
     font-family: 'Playfair Display', serif;
     text-decoration: none;
