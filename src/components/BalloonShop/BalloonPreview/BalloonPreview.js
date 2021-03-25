@@ -6,7 +6,7 @@ const BalloonPreview = ({colors}) => {
 
     for (const color in colors) {
         for (let i = 0; i < colors[color]; i++) {
-            result.push(<BalloonColors type={colors} />)
+            result.push(<BalloonColors type={color} />)
         }
     }
 

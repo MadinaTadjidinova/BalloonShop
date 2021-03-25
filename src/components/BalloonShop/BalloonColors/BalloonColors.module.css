@@ -1,3 +1,5 @@
 .BalloonColors {
-    position: absolute;
+  background-size: cover;
+  margin: 0;
+  display: flex;
   }

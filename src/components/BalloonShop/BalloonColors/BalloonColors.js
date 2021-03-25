@@ -1,18 +1,19 @@
 import classes from "./BalloonColors.module.css";
 
+import redBackground from "../../../images/red_balloon.svg";
+import yellowBackground from "../../../images/yellow_balloon.svg";
+import pinckBackground from "../../../images/pink_balloon.svg";
+import greenBackground from "../../../images/green_balloon.svg";
+import blueBackground from "../../../images/blue_balloon.svg";
+
 const BalloonColors = ({ type }) => {
   const types = {
-    red: { backgroundColor: "red", width: "50px", height: "50px", borderRadius: "50px" },
-    blue: { backgroundColor: "blue", width: "50px", height: "50px", borderRadius: "50px" },
-    yellow: { backgroundColor: "yellow", width: "50px", height: "50px", borderRadius: "50px"},
-    tomato: { backgroundColor: "tomato", width: "50px", height: "50px", borderRadius: "50px"},
-    black: { backgroundColor: "black", width: "50px", height: "50px", borderRadius: "50px" },
-    green: { backgroundColor: "green", width: "50px", height: "50px", borderRadius: "50px"},
+    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px" },
+    blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px" },
+    yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px" },
+    pinck: { backgroundImage: `url(${pinckBackground})`,  width: "50px", height: "170px" },
+    green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px" },
   };
-
-
-  
-
   
 
   return (
