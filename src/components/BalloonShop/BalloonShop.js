@@ -4,9 +4,10 @@ import classes from "./BalloonShop.module.css";
 
 const BalloonShop = () => {
   const colors = {
-    red: 2,
-    blue: 2,
+    red: 20,
+    blue: 19,
     yellow: 2,
+    pinck: 2,
     green: 1,
   };
 
