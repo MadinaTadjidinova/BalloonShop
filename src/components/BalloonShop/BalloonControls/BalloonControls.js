@@ -1,15 +1,13 @@
+// import BalloonControl from "./BalloonControl/BalloonControl";
 import classes from "./BalloonControls.module.css";
 
-const BalloonControls = () => {
-  for (const color in colors) {
-    for (let i = 0; i < colors[color]; i++) {
-        result.push(color)
-    }
-}
-
-
+const BalloonControls = ({type}) => {
   return (
-    <div className={classes.BalloonControls}>{result}</div>
+    <div className={classes.BalloonControls}>
+      <button className = {classes.ControlA}>-</button>
+     {type}
+     <button className = {classes.ControlB}>+</button>
+      </div>
   );
 }
 
