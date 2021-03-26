@@ -16,7 +16,7 @@ const BalloonShop = () => {
     const newColors = { ...colors };
     newColors[type]++;
     setColors(newColors);
-  }
+  }  
 
   function removeColor(type) {
     const newColors = { ...colors };
