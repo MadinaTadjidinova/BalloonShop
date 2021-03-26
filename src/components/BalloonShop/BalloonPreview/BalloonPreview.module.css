@@ -1,14 +1,28 @@
-.BalloonPreview {
-    width: 650px;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    background-color:  rgb(0, 255, 221);;
-    display: flex;
-    flex-wrap:wrap;
-  }
-  .colors {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  
+.BalloonPreview{
+  width: 500px;
+  background-color:  rgb(0, 255, 221);
+  border-radius: 20px;
+
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-wrap:wrap;
+}
+.colors{
+display: flex;
+flex-wrap: wrap;
+margin: 5px;
+}
+@media(max-width:1030px){
+.BalloonPreview{
+  max-width: 85%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+}
+
+  
 
 

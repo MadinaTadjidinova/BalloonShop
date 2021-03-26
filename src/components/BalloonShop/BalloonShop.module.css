@@ -1,7 +1,6 @@
 .BalloonShop {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-    overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
   }

@@ -1,5 +1,16 @@
 .BalloonColors {
-  background-size: cover;
-  margin: 0;
-  display: flex;
+    background-size: cover;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: flex;
+}
+
+
+@media(max-width:520px){
+  .BalloonColors{
+    margin-left: 12px;
   }
+  }
+  
