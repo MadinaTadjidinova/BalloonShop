@@ -8,7 +8,7 @@ import blueBackground from "../../../images/blue_balloon.svg";
 
 const BalloonColors = ({ type }) => {
   const types = {
-    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px" },
+    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px"},
     blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px" },
     yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px" },
     pinck: { backgroundImage: `url(${pinckBackground})`,  width: "50px", height: "170px" },
