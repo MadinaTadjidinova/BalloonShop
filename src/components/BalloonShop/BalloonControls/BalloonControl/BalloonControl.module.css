@@ -1,0 +1,32 @@
+ .BalloonControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+  }
+  /* .BalloonControl .colors div {
+    position: static;
+    margin: 0 .5rem;
+  } */ 
+  .BalloonControl button {
+    border: 0;
+    margin: 0 5rem;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(255, 152, 133);
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .BalloonControl button:hover {
+    background-color: rgb(172, 26, 0);
+  }
+  .BalloonControl button:focus {
+    outline: none;
+  }
+
+  .BalloonControls {
+     display: none;
+  }
