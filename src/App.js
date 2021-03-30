@@ -1,12 +1,12 @@
 import Layout from "./components/Layout/Layout";
-import BalloonBuilder from "./components/BalloonShop/BalloonShop";
+import BalloonShop from "./components/BalloonShop/BalloonShop";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Layout>
-        <BalloonBuilder />
+        <BalloonShop />
       </Layout>
     </div>
   );

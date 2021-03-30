@@ -12,7 +12,7 @@ const BalloonControl = ({ type, addColor, removeColor }) => {
 
   return <div className={classes.BalloonControl} style={types[type]}>
        <button onClick={() => addColor(type)}>+</button>
-      <BalloonColors types={type} />
+      <BalloonColors type={type} />
       <button onClick={() => removeColor(type)}>-</button>
   </div>;
 };

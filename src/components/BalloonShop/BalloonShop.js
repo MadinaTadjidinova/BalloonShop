@@ -5,9 +5,9 @@ import { useState } from "react";
 
 const BalloonShop = () => {
   const [colors, setColors] = useState({
-    red: 2,
+    red: 1,
     blue: 1,
-    yellow: 2,
+    yellow: 1,
     pinck: 2,
     green: 1,
   });

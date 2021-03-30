@@ -19,9 +19,9 @@ const BalloonColors = ({ type, fixed }) => {
 
 
   function getPosition(colorWidth) {
-    const balloonDiametr = 380;
-    const balloonRadius = balloonDiametr / 2;
-    const colorRadius = parseInt(colorWidth) / 2;
+    const balloonDiametr = 160;
+    const balloonRadius = balloonDiametr / 1;
+    const colorRadius = parseInt(colorWidth) / 1;
 
     const colorTop = Math.round(Math.random() * balloonDiametr);
     const colorLeft = Math.round(Math.random() * balloonDiametr);
@@ -53,4 +53,3 @@ const BalloonColors = ({ type, fixed }) => {
 }
 
 export default React.memo(BalloonColors);
-
