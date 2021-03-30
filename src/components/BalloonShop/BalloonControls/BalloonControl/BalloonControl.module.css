@@ -14,14 +14,14 @@
     border-radius: 100%;
     width: 2rem;
     height: 2rem;
-    background-color: rgb(255, 152, 133);
+    background-color: rgb(18, 107, 129);
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
   }
   .BalloonControl button:hover {
-    background-color: rgb(172, 26, 0);
+    background-color: rgb(214, 23, 23);
   }
   .BalloonControl button:focus {
     outline: none;

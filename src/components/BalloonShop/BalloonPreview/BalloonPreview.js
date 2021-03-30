@@ -6,17 +6,20 @@ const BalloonPreview = ({colors}) => {
 
     for (const color in colors) {
         for (let i = 0; i < colors[color]; i++) {
-            result.push(<BalloonColors type={color} />)
+            result.push(<BalloonColors key={color + i} type={color} />)
         }
     }
 
     return(
         <div className={classes.BalloonPreview}>
+            <div 
+            className={classes.colors}>
             {result}
+            </div>
         </div>
     )
 }
 
 export default BalloonPreview;
 
-
+   

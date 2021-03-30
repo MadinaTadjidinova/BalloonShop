@@ -1,17 +1,11 @@
 .BalloonColors {
     background-size: cover;
-    margin-right: 5px;
+    /* margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 5px;
-    margin-top: 5px;
-    /* position: absolute; */
-    display: flex;
+    margin-top: 5px; */
+    position: absolute;
 
-    /* background-image: unset;
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; */
 }
 
 

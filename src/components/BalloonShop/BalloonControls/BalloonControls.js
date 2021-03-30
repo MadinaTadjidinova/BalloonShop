@@ -2,8 +2,8 @@ import BalloonControl from "./BalloonControl/BalloonControl";
 import classes from "./BalloonControls.module.css";
 
 const BalloonControls = ({ colors, addColor, removeColor }) => {
-  let results = [];
-  for (let color in colors) {
+  const results = [];
+  for (const color in colors) {
     results.push(
       <BalloonControl
         type={color}
@@ -12,7 +12,9 @@ const BalloonControls = ({ colors, addColor, removeColor }) => {
       />
     );
   }
-  return <div className={classes.BalloonControls}>{results}</div>;
+  return (<div className={classes.BalloonControls}>{results}</div> );
 };
 
 export default BalloonControls;
+
+         
