@@ -1,3 +1,4 @@
+import React from "react";
 
 import classes from "./BalloonColors.module.css";
 
@@ -7,7 +8,7 @@ import pinckBackground from "../../../images/pink_balloon.svg";
 import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
 
-const BalloonColors = ({ type }) => {
+const BalloonColors = ({ type, fixed }) => {
   const types = {
     red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px"},
     blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px" },
@@ -17,39 +18,39 @@ const BalloonColors = ({ type }) => {
   };
 
 
-  // types[type].top = Math.round(Math.random() * 400);
-  // types[type].left = Math.round(Math.random() * 400)
-  // function getPosition(colorWidth) {
-  //   const balloonDiametr = 380;
-  //   const balloonRadius = balloonDiametr / 2;
-  //   const colorRadius = parseInt(colorWidth) / 2;
+  function getPosition(colorWidth) {
+    const balloonDiametr = 380;
+    const balloonRadius = balloonDiametr / 2;
+    const colorRadius = parseInt(colorWidth) / 2;
 
-  //   const colorTop = Math.round(Math.random() * balloonDiametr);
-  //   const colorLeft = Math.round(Math.random() * balloonDiametr);
+    const colorTop = Math.round(Math.random() * balloonDiametr);
+    const colorLeft = Math.round(Math.random() * balloonDiametr);
 
-  //   const distance = Math.sqrt(
-  //     Math.pow(colorTop - balloonRadius, 2) + Math.pow(colorLeft - balloonRadius, 2)
-  //   ) + colorRadius;
+    const distance = Math.sqrt(
+      Math.pow(colorTop - balloonRadius, 2) + Math.pow(colorLeft - balloonRadius, 2)
+    ) + colorRadius;
 
-  //   return distance < balloonRadius
-  //     ? {
-  //       top: colorTop - colorRadius,
-  //       left: colorLeft - colorRadius
-  //     }
-  //     : getPosition(colorWidth);
-  // }
+    return distance < balloonRadius
+      ? {
+        top: colorTop - colorRadius,
+        left: colorLeft - colorRadius
+      }
+      : getPosition(colorWidth);
+  }
 
-  // // Get random position for this ingredient.
-  //   const position = getPosition(types[type].width);
-  //   types[type].top = position.top + "px";
-  //   types[type].left = position.left + "px";
-  // // Get random rotation for this ingredient.
-  // types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+  if (!fixed) {
+    const position = getPosition(types[type].width);
+    types[type].top = position.top + "px";
+    types[type].left = position.left + "px";
+    // Get random rotation for this ingredient.
+    types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+  }
+
 
   return (
     <div className={classes.BalloonColors} style={types[type]}></div>
   );
 }
 
-export default BalloonColors;
+export default React.memo(BalloonColors);
 
