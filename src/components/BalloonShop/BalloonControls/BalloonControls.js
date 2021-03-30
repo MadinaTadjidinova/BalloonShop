@@ -12,9 +12,9 @@ const BalloonControls = ({ colors, addColor, removeColor }) => {
       />
     );
   }
-  return (<div className={classes.BalloonControls}>{results}</div> );
+  return(
+  <div className={classes.BalloonControls}>{results}</div>
+  );
 };
 
 export default BalloonControls;
-
-         

@@ -6,7 +6,7 @@ const BalloonControl = ({ type, addColor, removeColor }) => {
     red: { width: "50px", height: "50px", backgroundColor: "red" , borderRadius: "50%"},
     blue: { width: "50px", height: "50px", backgroundColor: "blue" , borderRadius: "50%" },
     yellow: { width: "50px", height: "50px", backgroundColor: "yellow" , borderRadius: "50%" },
-    pinck: { width: "50px", height: "50px", backgroundColor: "pinck" , borderRadius: "50%"},
+    pinck: { width: "50px", height: "50px", backgroundColor: "pink" , borderRadius: "50%"},
     green: { width: "50px", height: "50px", backgroundColor: "green" , borderRadius: "50%"},
   };
 
