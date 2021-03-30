@@ -19,15 +19,15 @@ const BalloonColors = ({ type, fixed }) => {
 
 
   function getPosition(colorWidth) {
-    const balloonDiametr = 160;
-    const balloonRadius = balloonDiametr / 1;
-    const colorRadius = parseInt(colorWidth) / 1;
+    const balloonDiametr = 260;
+    const balloonRadius = balloonDiametr / 10;
+    const colorRadius = parseInt(colorWidth) / 8;
 
     const colorTop = Math.round(Math.random() * balloonDiametr);
     const colorLeft = Math.round(Math.random() * balloonDiametr);
 
     const distance = Math.sqrt(
-      Math.pow(colorTop - balloonRadius, 2) + Math.pow(colorLeft - balloonRadius, 2)
+      Math.pow(colorTop - balloonRadius, 5) + Math.pow(colorLeft - balloonRadius, 1)
     ) + colorRadius;
 
     return distance < balloonRadius
@@ -43,7 +43,7 @@ const BalloonColors = ({ type, fixed }) => {
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";
     // Get random rotation for this ingredient.
-    types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+    types[type].transform = `rotate(${Math.round(Math.random() * 0)}deg)`;
   }
 
 

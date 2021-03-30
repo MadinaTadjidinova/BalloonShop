@@ -5,11 +5,11 @@ import { useState } from "react";
 
 const BalloonShop = () => {
   const [colors, setColors] = useState({
-    red: 1,
-    blue: 1,
-    yellow: 1,
-    pinck: 2,
-    green: 1,
+    red: 0,
+    blue: 0,
+    yellow: 0,
+    pinck: 0,
+    green: 0,
   });
 
   function addColor(type) {
