@@ -1,7 +1,7 @@
 import BalloonColors from "../BalloonColors/BalloonColors"
 import classes from "./BalloonPreview.module.css"
 
-const BalloonPreview = ({colors}) => {
+const BalloonPreview = ({colors, price}) => {
     const result = [];
 
     for (const color in colors) {
@@ -12,15 +12,19 @@ const BalloonPreview = ({colors}) => {
 
     return(
         <div className={classes.BalloonPreview}>
+            <div>
             <div 
             className={classes.colors}>
             {result}
+            </div>
+            <div className={classes.price}>{price} som</div>
             </div>
         </div>
     )
 }
 
 export default BalloonPreview;
+
 
    
    

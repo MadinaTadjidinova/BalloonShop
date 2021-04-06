@@ -1,10 +1,10 @@
 .BalloonColors {
-    background-size: cover;
-    /* margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px; */
-    position: absolute;
+  background-size: cover;
+  /* margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px; */
+  position: absolute;
 
 }
 
@@ -14,4 +14,26 @@
     margin-left: 12px;
   }
   } */
+
+  /* .Toys {
+    width: 36px;
+    height: 36px;
   
+    background-repeat: round;
+    transform: rotate(20deg);
+  }
+  .red_balloon {
+    background-image: url(../../../images/red_balloon.svg);
+  }
+  .yellow_balloon {
+    background-image: url(../../../images/yellow_balloon.svg);
+  }
+  .pink_balloon {
+    background-image: url(../../../images/pink_balloon.svg);
+  }
+  .green_balloon {
+    background-image: url(../../../images/green_balloon.svg);
+  }
+  .blue_balloon {
+    background-image: url(../../../images/blue_balloon.svg);
+  } */
