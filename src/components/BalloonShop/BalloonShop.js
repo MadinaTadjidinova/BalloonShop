@@ -3,6 +3,7 @@ import BalloonControls from "./BalloonControls/BalloonControls";
 import classes from "./BalloonShop.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Modal from "../UI/Modal/Modal"
 
 const BalloonShop = () => {
   const prices = {
@@ -51,6 +52,7 @@ const BalloonShop = () => {
         addColor={addColor}
         removeColor={removeColor}
       />
+      <Modal>Hello</Modal>
     </div>
   );
 };
