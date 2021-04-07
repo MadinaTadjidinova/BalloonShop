@@ -15,16 +15,17 @@ const BalloonShop = () => {
   
   
   const [colors, setColors] = useState({});
+  const [price, setPrice] = useState(0);
 
-  useEffect(function () {
-    axios
-      .get("https://builder-69f8f-default-rtdb.firebaseio.com/colors.json")
+  useEffect(
+    () => axios
+      .get('https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json')
       .then(response => {
-        setColors({ ...response.data });
-      });
-  }, []);
+        setPrice(response.data.price);
+        setColors(response.data.colors);
+      }), []
+  );
 
-  const [price, setPrice] = useState(25);
 
   function addColor(type) {
     const newColors = { ...colors };
@@ -34,11 +35,13 @@ const BalloonShop = () => {
   }
 
   function removeColor(type) {
+    if (colors[type]) {
     const newColors = { ...colors };
     newColors[type]--;
     setPrice(price - prices[type])
     setColors(newColors);
   }
+}
 
   return (
     <div className={classes.BalloonShop}>

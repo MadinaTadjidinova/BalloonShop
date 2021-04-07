@@ -1,7 +1,7 @@
 .Toolbar {
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: relative;
   top: 0;
   left: 0;
 

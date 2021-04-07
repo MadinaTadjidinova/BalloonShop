@@ -1,13 +1,25 @@
-.BalloonColors {
-  background-size: cover;
+/* .BalloonColors {
+  background-size: cover; */
   /* margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
   margin-top: 5px; */
-  position: absolute;
+  /* position: absolute;
+} */
 
+
+.BalloonColors{
+  background-size: cover;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  
 }
-
+/* .BalloonColors:hover{
+  transform: scale(1.1);
+} */
 
 /* @media(max-width:520px){
   .BalloonColors{

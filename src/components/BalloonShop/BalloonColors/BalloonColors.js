@@ -8,7 +8,7 @@ import pinkBackground from "../../../images/pink_balloon.svg";
 import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
 
-const BalloonColors = ({ type, fixed }) => {
+const BalloonColors = ({ type }) => {
   const types = {
     red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px"},
     blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px" },
@@ -17,42 +17,58 @@ const BalloonColors = ({ type, fixed }) => {
     green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px" },
   };
 
-
-  function getPosition(colorWidth) {
-    const balloonDiametr = 260;
-    const balloonRadius = balloonDiametr / 10;
-    const colorRadius = parseInt(colorWidth) / 8;
-
-    const colorTop = Math.round(Math.random() * balloonDiametr);
-    const colorLeft = Math.round(Math.random() * balloonDiametr);
-
-    const distance = Math.sqrt(
-      Math.pow(colorTop - balloonRadius, 5) + Math.pow(colorLeft - balloonRadius, 1)
-    ) + colorRadius;
-
-    return distance < balloonRadius
-      ? {
-        top: colorTop - colorRadius,
-        left: colorLeft - colorRadius
-      }
-      : getPosition(colorWidth);
-  }
-
-  if (!fixed) {
-    const position = getPosition(types[type].width);
-    types[type].top = position.top + "px";
-    types[type].left = position.left + "px";
-    // Get random rotation for this ingredient.
-    types[type].transform = `rotate(${Math.round(Math.random() * 0)}deg)`;
-  }
-
-
-  return (
+    return (
     <div className={classes.BalloonColors} style={types[type]}></div>
   );
-}
+  }
 
-export default React.memo(BalloonColors);
+  export default React.memo(BalloonColors);
+
+//   function getPosition(colorWidth) {
+//     const balloonDiametr = 330;
+//     const balloonRadius = balloonDiametr / 10;
+//     const colorRadius = parseInt(colorWidth) / 8;
+
+//     const colorTop = Math.round(Math.random() * balloonDiametr);
+//     const colorLeft = Math.round(Math.random() * balloonDiametr);
+
+//     const distance = Math.sqrt(
+//       Math.pow(colorTop - balloonRadius, 5) + Math.pow(colorLeft - balloonRadius, 1)
+//     ) + colorRadius;
+
+//     return distance < balloonRadius
+//       ? {
+//         top: colorTop - colorRadius,
+//         left: colorLeft - colorRadius
+//       }
+//       : getPosition(colorWidth);
+//   }
+
+//   if (!fixed) {
+//     const position = getPosition(types[type].width);
+//     types[type].top = position.top + "px";
+//     types[type].left = position.left + "px";
+//     // Get random rotation for this ingredient.
+//     types[type].transform = `rotate(${Math.round(Math.random() * 0)}deg)`;
+//   }
+
+
+//   return (
+//     <div className={classes.BalloonColors} style={types[type]}></div>
+//   );
+// }
+
+// export default React.memo(BalloonColors);
+
+
+
+
+
+
+
+
+
+
 
 
 
