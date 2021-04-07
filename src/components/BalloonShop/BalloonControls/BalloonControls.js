@@ -1,12 +1,20 @@
 import BalloonControl from "./BalloonControl/BalloonControl";
 import classes from "./BalloonControls.module.css";
 
-const BalloonControls = ({ colors, addColor, removeColor }) => {
+const BalloonControls = ({  addColor, removeColor }) => {
   const results = [];
+  const colors = [
+    "red",
+    "blue",
+    "pink",
+    "green",
+    "yellow",
+  ];
   for (const color in colors) {
     results.push(
       <BalloonControl
-        type={color}
+        type={colors[color]}
+        key={colors[color]}
         addColor={addColor}
         removeColor={removeColor}
       />

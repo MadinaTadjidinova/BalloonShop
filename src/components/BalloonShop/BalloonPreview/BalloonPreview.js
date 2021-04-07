@@ -1,30 +1,25 @@
-import BalloonColors from "../BalloonColors/BalloonColors"
-import classes from "./BalloonPreview.module.css"
+import BalloonColors from "../BalloonColors/BalloonColors";
+import classes from "./BalloonPreview.module.css";
 
-const BalloonPreview = ({colors, price}) => {
-    const result = [];
+const BalloonPreview = ({ colors, price }) => {
+  const result = [];
 
-    for (const color in colors) {
-        for (let i = 0; i < colors[color]; i++) {
-            result.push(<BalloonColors key={color + i} type={color} />)
-        }
+  for (const color in colors) {
+    for (let i = 0; i < colors[color]; i++) {
+      result.push(
+        <BalloonColors key={colors[color] + color} type={colors[color]} />
+      );
     }
+  }
 
-    return(
-        <div className={classes.BalloonPreview}>
-            <div>
-            <div 
-            className={classes.colors}>
-            {result}
-            </div>
-            <div className={classes.price}>{price} som</div>
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className={classes.BalloonPreview}>
+      <div className={classes.balloon}>
+        <div className={classes.colors}>{result}</div>
+      </div>
+      <div className={classes.price}>{price.toFixed(1)} som</div>
+    </div>
+  );
+};
 
 export default BalloonPreview;
-
-
-   
-   
