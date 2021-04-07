@@ -19,15 +19,15 @@ const BalloonColors = ({ type, fixed }) => {
 
 
   function getPosition(colorWidth) {
-    const balloonDiametr = 310;
-    const balloonRadius = balloonDiametr / 2;
-    const colorRadius = parseInt(colorWidth) / 2;
+    const balloonDiametr = 260;
+    const balloonRadius = balloonDiametr / 10;
+    const colorRadius = parseInt(colorWidth) / 8;
 
     const colorTop = Math.round(Math.random() * balloonDiametr);
     const colorLeft = Math.round(Math.random() * balloonDiametr);
 
     const distance = Math.sqrt(
-      Math.pow(colorTop - balloonRadius, 2) + Math.pow(colorLeft - balloonRadius, 1.1)
+      Math.pow(colorTop - balloonRadius, 5) + Math.pow(colorLeft - balloonRadius, 1)
     ) + colorRadius;
 
     return distance < balloonRadius

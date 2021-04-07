@@ -6,18 +6,19 @@ const BalloonPreview = ({ colors, price }) => {
 
   for (const color in colors) {
     for (let i = 0; i < colors[color]; i++) {
-      result.push(
-        <BalloonColors key={colors[color] + color} type={colors[color]} />
-      );
+      result.push(<BalloonColors key={color + i} type={color} />);
     }
   }
 
   return (
     <div className={classes.BalloonPreview}>
       <div className={classes.balloon}>
-        <div className={classes.colors}>{result}</div>
-      </div>
-      <div className={classes.price}>{price.toFixed(1)} som</div>
+        <div 
+           className={classes.colors}>
+            {result}
+        </div>
+        </div>
+        <div className={classes.price}>{price} som</div>
     </div>
   );
 };
