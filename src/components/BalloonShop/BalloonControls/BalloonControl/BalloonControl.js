@@ -1,8 +1,16 @@
 import Button from "../../../UI/Button/Button";
 import BalloonColors from "../../BalloonColors/BalloonColors";
 import classes from "../BalloonControl/BalloonControl.module.css";
+import expp from "../../../../audio/exp.mp3"
 
 const BalloonControl = ({ type, addColor, removeColor }) => {
+  function playExp(){
+      let exp = new Audio();
+      exp.preload ='auto';
+      exp.src = expp
+      exp.play()
+      
+  }
   const types = {
     red: {
       width: "50px",
@@ -42,7 +50,7 @@ const BalloonControl = ({ type, addColor, removeColor }) => {
 
       <BalloonColors type={type} />
 
-      <Button onClick={() => removeColor(type)}>-</Button>
+      <Button onClick={() => {removeColor(type); playExp()}}>-</Button>
     </div>
   );
 };
