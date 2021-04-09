@@ -10,38 +10,18 @@ import blueBackground from "../../../images/blue_balloon.svg";
 
 const BalloonColors = ({ type }) => {
   const types = {
-    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)"},
-    blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
-    yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
-    pink: { backgroundImage: `url(${pinkBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
-    green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
+    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px"},
+    blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px" },
+    yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px" },
+    pink: { backgroundImage: `url(${pinkBackground})`,  width: "50px", height: "170px" },
+    green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px" },
   };
 
 
-  // const animation ={
-  //   red: { },
-  //   blue: { },
-  //   yellow: { },
-  //   pink: { },
-  //   green: { },
-
-
-  //   @Keyframes animate{
-  //     0%{
-  //       transform: translateY(0px);
-  //     }
-  //     50%{
-  //       transform: translateY(-30px);
-  //     }
-  //     100%{
-  //       transform: translateY(0px);
-  //     }
-  //   }
-  // }
-
-
     return (
-    <div className={classes.BalloonColors} style={types[type]}></div>
+    <div className={classes.BalloonColors} style={types[type]}>
+      <div className={classes.animation}></div>
+    </div>
   );
   }
 

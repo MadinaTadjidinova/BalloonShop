@@ -15,20 +15,23 @@
   margin-top: 7px;
   display: flex;
   flex-direction: column;
-
   animation: animate 3s alternate infinite;
 }
+/* 
 @Keyframes animate{
   0%{
     transform: translateX(0px);
+    transform: translateY(0px);
   }
   50%{
     transform: translateX(-30px);
+    transform: translateY(-100px);
   }
   100%{
     transform: translateX(0px);
+    transform: translateY(0px);
   }
-}
+} */
 /* .BalloonColors:hover{
   transform: scale(1.1);
 } */
