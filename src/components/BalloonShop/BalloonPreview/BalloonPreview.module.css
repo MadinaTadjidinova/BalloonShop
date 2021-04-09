@@ -1,57 +1,9 @@
-/*   
-.BalloonPreview{ 
-   width: 400px;
-  background-color:  rgb(0, 255, 221);
-  border-radius: 20px;
-  height: 400px;
-  flex: 0 0 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* flex: 0 0 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.balloon{
-  width: 400px;
-  height: 400px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 50px;
-  background-color:  rgb(0, 255, 221);
-}
-.colors{
-  width: 380px;
-  height: 380px;
-  border-radius: 100%;
-  position: relative;
-}
-
-.price{
-  background-color:  rgb(0, 255, 221);
-  border-radius: 7px;
-  padding: 0 1rem;
-  font-size: 1.5rem;
-  color: white;
-  font-weight: bold;
-}
-
-@media(max-width:1030px){
-.BalloonPreview{
-  max-width: 85%;
-  margin: auto;
-  margin-bottom: 2rem;
-}
-} */
-
 .BalloonPreview{
   width: 650px;
-  background-color:  rgb(0, 255, 221);
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 20px;
+  background-color:  rgb(0, 255, 221);
 }
 .colors{
   display: flex;
@@ -86,4 +38,29 @@ padding: 5px;
 
   
 
+/* //random
+.BalloonPreview {
+  flex: 0 0 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.balloon {
+  width: 400px;
+  height: 400px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10%;
+  background-color: rgb(0, 255, 221);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colors {
+  width: 380px;
+  height: 380px;
+  border-radius: 10px;
+  position: relative;
+} */

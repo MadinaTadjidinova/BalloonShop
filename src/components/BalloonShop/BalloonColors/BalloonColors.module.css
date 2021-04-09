@@ -10,12 +10,24 @@
 
 .BalloonColors{
   background-size: cover;
-  margin-right: 7px;
+  margin-right: -17px;
   margin-bottom: 7px;
   margin-top: 7px;
   display: flex;
   flex-direction: column;
-  
+
+  animation: animate 3s alternate infinite;
+}
+@Keyframes animate{
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-30px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
 /* .BalloonColors:hover{
   transform: scale(1.1);

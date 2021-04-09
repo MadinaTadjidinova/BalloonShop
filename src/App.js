@@ -8,6 +8,7 @@ const App = () => {
       <Layout>
         <BalloonShop />
       </Layout>
+   
     </div>
   );
 }

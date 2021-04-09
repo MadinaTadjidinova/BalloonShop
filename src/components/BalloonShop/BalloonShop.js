@@ -52,6 +52,7 @@ const BalloonShop = () => {
     setOrdering(false);
   }
 
+
   return (
     <div className={classes.BalloonShop}>
       <BalloonPreview 
@@ -69,6 +70,7 @@ const BalloonShop = () => {
         cancel={stopOrdering}>
         Hello
       </Modal>
+
     </div>
   );
 };

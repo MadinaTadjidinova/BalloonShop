@@ -10,12 +10,35 @@ import blueBackground from "../../../images/blue_balloon.svg";
 
 const BalloonColors = ({ type }) => {
   const types = {
-    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px"},
-    blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px" },
-    yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px" },
-    pink: { backgroundImage: `url(${pinkBackground})`,  width: "50px", height: "170px" },
-    green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px" },
+    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)"},
+    blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
+    yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
+    pink: { backgroundImage: `url(${pinkBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
+    green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px", animation: "animation-delay: .2s", transform: "rotate(90deg)" },
   };
+
+
+  // const animation ={
+  //   red: { },
+  //   blue: { },
+  //   yellow: { },
+  //   pink: { },
+  //   green: { },
+
+
+  //   @Keyframes animate{
+  //     0%{
+  //       transform: translateY(0px);
+  //     }
+  //     50%{
+  //       transform: translateY(-30px);
+  //     }
+  //     100%{
+  //       transform: translateY(0px);
+  //     }
+  //   }
+  // }
+
 
     return (
     <div className={classes.BalloonColors} style={types[type]}></div>
@@ -24,33 +47,34 @@ const BalloonColors = ({ type }) => {
 
   export default React.memo(BalloonColors);
 
-//   function getPosition(colorWidth) {
-//     const balloonDiametr = 330;
-//     const balloonRadius = balloonDiametr / 10;
-//     const colorRadius = parseInt(colorWidth) / 8;
+//   function getPosition(ingredientWidth) {
+//     const pizzaDiameter = 380;
+//     const pizzaRadius = pizzaDiameter / 2;
+//     const ingredientRadius = parseInt(ingredientWidth) / 2;
 
-//     const colorTop = Math.round(Math.random() * balloonDiametr);
-//     const colorLeft = Math.round(Math.random() * balloonDiametr);
+//     const ingredientTop = Math.round(Math.random() * pizzaDiameter);
+//     const ingredientLeft = Math.round(Math.random() * pizzaDiameter);
 
 //     const distance = Math.sqrt(
-//       Math.pow(colorTop - balloonRadius, 5) + Math.pow(colorLeft - balloonRadius, 1)
-//     ) + colorRadius;
+//       Math.pow(ingredientTop - pizzaRadius, 2) + Math.pow(ingredientLeft - pizzaRadius, 2)
+//     ) + ingredientRadius;
 
-//     return distance < balloonRadius
+//     return distance < pizzaRadius
 //       ? {
-//         top: colorTop - colorRadius,
-//         left: colorLeft - colorRadius
+//         top: ingredientTop - ingredientRadius,
+//         left: ingredientLeft - ingredientRadius
 //       }
-//       : getPosition(colorWidth);
+//       : getPosition(ingredientWidth);
 //   }
 
+//   // Get random position for this ingredient.
 //   if (!fixed) {
 //     const position = getPosition(types[type].width);
 //     types[type].top = position.top + "px";
 //     types[type].left = position.left + "px";
-//     // Get random rotation for this ingredient.
-//     types[type].transform = `rotate(${Math.round(Math.random() * 0)}deg)`;
 //   }
+//   // Get random rotation for this ingredient.
+//   types[type].transform = `rotate(${Math.round(Math.random())}deg)`;
 
 
 //   return (

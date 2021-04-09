@@ -4,21 +4,16 @@
     align-items: center;
     margin: .7rem 0;
   }
-  /* .BalloonControl .colors div {
-    position: static;
-    margin: 0 .5rem;
-  } */ 
+
   .BalloonControl button {
     border: 0;
-    margin: 0 5rem;
+    margin: 0px 6rem;
     border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
     background-color: rgb(18, 107, 129);
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    cursor: pointer;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .BalloonControl button:hover {
     background-color: rgb(214, 23, 23);
@@ -29,4 +24,8 @@
 
   .BalloonControls {
      display: none;
+  }
+
+  .plus{
+    text-align: center;
   }
