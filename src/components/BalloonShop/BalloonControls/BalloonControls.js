@@ -27,6 +27,7 @@ const BalloonControls = ({
 
   return(
   <div className={classes.BalloonControls}>
+    
     <strong>Colors</strong>
     {results}
     <Button disabled={!total} onClick={startOrdering}>Order</Button>
