@@ -4,6 +4,9 @@ import classes from "./BalloonShop.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Modal from "../UI/Modal/Modal";
+import OrderSummary from "./OrderSummary/OrderSummary";
+import Button from "../UI/Button/Button";
+
 
 const BalloonShop = () => {
   const prices = {
@@ -12,23 +15,25 @@ const BalloonShop = () => {
     yellow: 5,
     blue: 5,
     pink: 5,
+    purple: 5,
   };
 
   const [colors, setColors] = useState({});
   const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState();
 
-  useEffect(
-    () =>
-      axios
-        .get("https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json")
-        .then((response) => {
-          setPrice(response.data.price);
-          setColors(response.data.colors);
-        }),
-    []
-  );
 
+  
+  useEffect(loadDefaults, []);
+
+  function loadDefaults() {
+    axios
+      .get('https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json')
+      .then(response => {
+        setPrice(response.data.price);
+        setColors(response.data.colors);
+      });
+  }
   function addColor(type) {
     const newColors = { ...colors };
     newColors[type]++;
@@ -52,7 +57,20 @@ const BalloonShop = () => {
     setOrdering(false);
   }
 
-
+  function finishOrdering() {
+    axios
+      .post('https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json', {
+        colors: colors,
+        price: price,
+        address: "1234 Jusaeva str",
+        phone: "0 777 777 777",
+        name: "Sadyr Japarov",
+      })
+      .then(() => {
+        setOrdering(false);
+        loadDefaults();
+      });
+  }
   return (
     <div className={classes.BalloonShop}>
       <BalloonPreview 
@@ -68,7 +86,12 @@ const BalloonShop = () => {
       <Modal 
         show={ordering} 
         cancel={stopOrdering}>
-        Hello
+        <OrderSummary
+        colors={colors}
+        price={price}
+        />
+         <Button onClick={finishOrdering} green>Checkout</Button>
+          <Button onClick={stopOrdering}>Cancel</Button>
       </Modal>
 
     </div>

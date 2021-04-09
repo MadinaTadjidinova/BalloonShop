@@ -7,7 +7,7 @@ import yellowBackground from "../../../images/yellow_balloon.svg";
 import pinkBackground from "../../../images/pink_balloon.svg";
 import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
-
+import purpleBackground from "../../../images/purple_balloon.png"
 const BalloonColors = ({ type }) => {
   const types = {
     red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px"},
@@ -15,6 +15,7 @@ const BalloonColors = ({ type }) => {
     yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px" },
     pink: { backgroundImage: `url(${pinkBackground})`,  width: "50px", height: "170px" },
     green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px" },
+    purple: { backgroundImage: `url(${purpleBackground})`,  width: "50px", height: "170px" },
   };
 
 

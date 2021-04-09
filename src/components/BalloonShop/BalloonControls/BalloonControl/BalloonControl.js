@@ -49,6 +49,12 @@ const BalloonControl = ({ type, addColor, removeColor }) => {
       backgroundColor: "green",
       borderRadius: "50%",
     },
+    purple: {
+      width: "50px",
+      height: "50px",
+      backgroundColor: "purple",
+      borderRadius: "50%",
+    },
   };
 
   return (
