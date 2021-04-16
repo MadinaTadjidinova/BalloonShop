@@ -3,7 +3,7 @@
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 20px;
-  background-color: #efdecd;
+  background-color: #d0d3cf;
   /* background-color:  rgb(0, 255, 221); */
   /* background-color: #f6e3a8; */
   /* box-shadow: 0 0 10px rgba(0, 0, 0, .1); */
@@ -22,7 +22,7 @@ padding-left: 18px;
 }
 .price{
 /* background-color:  rgb(0, 255, 221); */
-background-color: #efdecd;
+background-color: #d0d3cf;
 box-shadow: 0 0 10px black;
     max-width: 250px;
     text-align: center;
