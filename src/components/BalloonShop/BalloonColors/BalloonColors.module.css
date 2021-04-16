@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   animation: animate 3s alternate infinite;
+
+
 }
 
 @Keyframes animate{
