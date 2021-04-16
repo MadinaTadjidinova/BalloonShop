@@ -4,7 +4,6 @@ import classes from "../BalloonControl/BalloonControl.module.css";
 import expp from "../../../../audio/exp.mp3";
 import plusP from "../../../../audio/plus.mp3"
 
-import { keyframes } from "styled-components";
 
 const BalloonControl = ({ type, addColor, removeColor }) => {
   function playExp(){
