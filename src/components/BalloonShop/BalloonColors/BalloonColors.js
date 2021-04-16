@@ -18,6 +18,7 @@ const BalloonColors = ({ type }) => {
     purple: { backgroundImage: `url(${purpleBackground})`,  width: "50px", height: "170px" },
   };
 
+  
 
     return (
     <div className={classes.BalloonColors} style={types[type]}>

@@ -12,13 +12,12 @@ const BalloonPreview = ({ colors, price }) => {
 
   return (
     <div className={classes.BalloonPreview}>
-      <div className={classes.balloon}>
         <div 
            className={classes.colors}>
             {result}
         </div>
-        </div>
         <div className={classes.price}>{price} som</div>
+        
     </div>
   );
 };

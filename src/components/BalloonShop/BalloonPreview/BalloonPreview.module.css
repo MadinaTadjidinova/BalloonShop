@@ -3,7 +3,10 @@
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 20px;
-  background-color:  rgb(0, 255, 221);
+  background-color: #efdecd;
+  /* background-color:  rgb(0, 255, 221); */
+  /* background-color: #f6e3a8; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, .1); */
 }
 .colors{
   display: flex;
@@ -17,13 +20,15 @@ margin: 5px;
 padding-left: 18px;
 }
 .price{
-background-color:  rgb(0, 255, 221);
-max-width: 250px;
-margin: 0 auto;
-text-align: center;
-color: white;
-font-size: 32px;
-padding: 5px;
+/* background-color:  rgb(0, 255, 221); */
+background-color: #efdecd;
+box-shadow: 0 0 10px black;
+    max-width: 250px;
+    text-align: center;
+    color: #ad6718;;
+    font-size: 32px;
+    padding: 5px;
+    margin: 0 auto 2rem;
 
 }
 
