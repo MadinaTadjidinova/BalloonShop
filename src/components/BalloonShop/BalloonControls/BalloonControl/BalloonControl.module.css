@@ -30,3 +30,16 @@
   .plus{
     text-align: center;
   }
+  /* .plus[animate='1']{
+    text-align: center;
+    animation: spin 1s ease-in 1;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: translateY(350px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  } */

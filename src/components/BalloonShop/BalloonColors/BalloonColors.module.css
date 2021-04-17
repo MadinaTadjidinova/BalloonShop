@@ -1,36 +1,46 @@
 /* .BalloonColors {
   background-size: cover; */
-  /* margin-right: 5px;
+/* margin-right: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
   margin-top: 5px; */
-  /* position: absolute;
+/* position: absolute;
 } */
 
-
-.BalloonColors{
+.BalloonColors {
   background-size: cover;
   margin-right: -17px;
   margin-bottom: 7px;
   margin-top: 7px;
   display: flex;
   flex-direction: column;
+
   animation: animate 3s alternate infinite;
-
-
+  animation: spin 1s ease-out 1;
 }
 
-@Keyframes animate{
-  0%{
+@keyframes spin {
+  0% {
+    transform: translateY(350px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* @keyframes animate {
+  0% {
     transform: translateX(0px);
   }
-  50%{
+  50% {
     transform: translateX(-30px);
   }
-  100%{
+  100% {
     transform: translateX(0px);
   }
-} 
+} */
+
+
 /* .BalloonColors:hover{
   transform: scale(1.1);
 } */
@@ -41,7 +51,7 @@
   }
   } */
 
-  /* .Toys {
+/* .Toys {
     width: 36px;
     height: 36px;
   
