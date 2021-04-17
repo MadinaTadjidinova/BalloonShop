@@ -15,6 +15,9 @@
 }
 
 @media (max-width: 549px) {
+  .Toolbar {
+    z-index: 0;
+  }
   .Toolbar nav {
     display: none;
   }

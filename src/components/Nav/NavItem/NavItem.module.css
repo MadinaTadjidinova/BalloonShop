@@ -1,16 +1,25 @@
-
 .NavItem a {
-    color: #ad6718;
-    border-bottom: 5px solid transparent;
-    text-decoration: none;
-    display: block;
-    padding: .5rem 1rem .35rem;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 80px;
+  text-decoration: none;
+  color: #ad6718;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
   }
   .NavItem a:hover {
-    border-color: white;
-    background-color: rgb(236, 47, 14);
+    border-color:#ad6718;
+    background-color: rgba(61, 60, 60, 0.1);
   }
-  .NavItem a:active,
+  .NavItem a:focus,
   .NavItem a.active {
-    border-color: white;
+    border-color: #ad6718;
+    background-color: rgba(61, 60, 60, 0.1);
+  }
+  @media (max-width: 660px) {
+    .NavItem a {
+      border: none;
+      border-left: 3px solid transparent;
+    }
   }

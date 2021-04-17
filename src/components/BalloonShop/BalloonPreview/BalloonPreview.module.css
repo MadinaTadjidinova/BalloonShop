@@ -24,8 +24,6 @@ padding-left: 18px;
 }
 .price{
 /* background-color:  rgb(0, 255, 221); */
-box-shadow: 0 0 10px black;
-
 background-color: #d0d3cf;
 max-width: 250px;
 margin: 0 auto;
@@ -34,6 +32,7 @@ color: #ad6718;
 font-size: 32px;
 padding: 5px;
 margin-bottom: 2rem;
+border-radius: 10px;
 }
 
 @media (max-width: 1020px) {

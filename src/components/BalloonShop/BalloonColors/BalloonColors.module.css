@@ -21,7 +21,7 @@
 
 @keyframes spin {
   0% {
-    transform: translateY(350px);
+    transform: translateY(150px);
   }
   100% {
     transform: translateY(0px);
