@@ -1,3 +1,4 @@
+import React from 'react'
 import Button from "../../../UI/Button/Button";
 import BalloonColors from "../../BalloonColors/BalloonColors";
 import classes from "../BalloonControl/BalloonControl.module.css";
@@ -6,6 +7,8 @@ import plusP from "../../../../audio/plus.mp3"
 
 
 const BalloonControl = ({ type, addColor, removeColor }) => {
+  // const [animate, setAnimate] = React.useState(0)
+
   function playExp(){
       let exp = new Audio();
       exp.preload ='auto';
@@ -61,10 +64,13 @@ const BalloonControl = ({ type, addColor, removeColor }) => {
   return (
     <div className={classes.BalloonControl} style={types[type]}>
 
-      <Button  className={classes.plus} onClick={() => {addColor(type); playPlus()}}>+</Button>
+      <Button  className='plus' onClick={() => {addColor(type); playPlus()}}>+</Button>
       <BalloonColors type={type} />
 
-      <Button className={classes.minus} onClick={() => {removeColor(type); playExp()}}>-</Button>
+      <Button className='minus' onClick={() => {removeColor(type); playExp()}}>-</Button>
+
+      {/* <Button className='minus' onClick={() => {removeColor(type); playExp()}, setAnimate(0) }onAnimationEnd={() => setAnimate(0)}
+      animate={animate}>-</Button> */}
     </div>
   );
 };

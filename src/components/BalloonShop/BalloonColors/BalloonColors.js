@@ -1,33 +1,55 @@
 import React from "react";
 
 import classes from "./BalloonColors.module.css";
-
 import redBackground from "../../../images/red_balloon.svg";
 import yellowBackground from "../../../images/yellow_balloon.svg";
 import pinkBackground from "../../../images/pink_balloon.svg";
 import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
-import purpleBackground from "../../../images/purple_balloon.png"
+import purpleBackground from "../../../images/purple_balloon.png";
+
 const BalloonColors = ({ type }) => {
   const types = {
-    red: { backgroundImage: `url(${redBackground})`,  width: "50px", height: "170px"},
-    blue: { backgroundImage: `url(${blueBackground})`,  width: "50px", height: "170px" },
-    yellow: { backgroundImage: `url(${yellowBackground})`,  width: "50px", height: "170px" },
-    pink: { backgroundImage: `url(${pinkBackground})`,  width: "50px", height: "170px" },
-    green: { backgroundImage: `url(${greenBackground})`,  width: "50px", height: "170px" },
-    purple: { backgroundImage: `url(${purpleBackground})`,  width: "50px", height: "170px" },
+    red: {
+      backgroundImage: `url(${redBackground})`,
+      width: "50px",
+      height: "170px",
+    },
+    blue: {
+      backgroundImage: `url(${blueBackground})`,
+      width: "50px",
+      height: "170px",
+    },
+    yellow: {
+      backgroundImage: `url(${yellowBackground})`,
+      width: "50px",
+      height: "170px",
+    },
+    pink: {
+      backgroundImage: `url(${pinkBackground})`,
+      width: "50px",
+      height: "170px",
+    },
+    green: {
+      backgroundImage: `url(${greenBackground})`,
+      width: "50px",
+      height: "170px",
+    },
+    purple: {
+      backgroundImage: `url(${purpleBackground})`,
+      width: "50px",
+      height: "170px",
+    },
   };
 
-  
-
-    return (
+  return (
     <div className={classes.BalloonColors} style={types[type]}>
       <div className={classes.animation}></div>
     </div>
   );
-  }
+};
 
-  export default React.memo(BalloonColors);
+export default React.memo(BalloonColors);
 
 //   function getPosition(ingredientWidth) {
 //     const pizzaDiameter = 380;
@@ -58,25 +80,12 @@ const BalloonColors = ({ type }) => {
 //   // Get random rotation for this ingredient.
 //   types[type].transform = `rotate(${Math.round(Math.random())}deg)`;
 
-
 //   return (
 //     <div className={classes.BalloonColors} style={types[type]}></div>
 //   );
 // }
 
 // export default React.memo(BalloonColors);
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { memo } from "react";
 // import classes from "./BalloonColors.module.css";
@@ -116,7 +125,7 @@ const BalloonColors = ({ type }) => {
 //       default:
 //       toysClasses.push(classes.green_balloon);
 //       break;
- 
+
 //   }
 
 //   const position = getPosition(110 / 6);
