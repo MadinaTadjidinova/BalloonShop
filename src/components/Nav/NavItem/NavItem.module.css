@@ -4,17 +4,17 @@
   padding: 8px;
   height: 80px;
   text-decoration: none;
-  color: #ad6718;
+  color: slategray;
   border-bottom: 3px solid transparent;
   transition: all 0.2s ease-in-out;
   }
   .NavItem a:hover {
-    border-color:#ad6718;
+    border-color:slategray;
     background-color: rgba(61, 60, 60, 0.1);
   }
   .NavItem a:focus,
   .NavItem a.active {
-    border-color: #ad6718;
+    border-color: slategray;
     background-color: rgba(61, 60, 60, 0.1);
   }
   @media (max-width: 660px) {

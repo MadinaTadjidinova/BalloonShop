@@ -12,7 +12,7 @@
   }
 
 .Logo div {
-    --fill-color: #ad6718;
+    --fill-color: slategray;
     position: relative;
     display: block;
     /* font: 700 2rem Raleway, sans-serif; */

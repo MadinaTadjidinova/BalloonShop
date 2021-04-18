@@ -3,15 +3,15 @@
     margin: 0 .5rem;
     padding: 0 1rem;
     border-radius: 1rem;
-    color: #ad6718;
-    border-color:#ad6718;
+    color: slategray;
+    border-color:slategray;
     background-color: #d0d3cf;
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
   }
   .Button:not(:disabled):hover {
-    border-color:#ad6718;
+    border-color:slategray;
     background-color: rgba(61, 60, 60, 0.1);
   }
   .Button:focus {
