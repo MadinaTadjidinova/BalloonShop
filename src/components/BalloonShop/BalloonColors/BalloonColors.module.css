@@ -8,6 +8,7 @@
 
   animation: animate 3s alternate infinite;
   animation: spin 1s ease-out 1;
+
 }
 
 @keyframes spin {
