@@ -7,13 +7,13 @@ const CheckoutSummary = ({ cancelCallback }) => {
     <div className={classes.CheckoutSummary}>
       <div>
         <BalloonPreview colors={{
-          red: 5, 
-          blue: 5,
-          green: 5,
-          pink: 5,
-          purple: 5,
-          yellow:5,
-        }} price={150} />
+          red: 1, 
+          blue: 1,
+          green: 1,
+          pink: 1,
+          purple: 1,
+          yellow:1,
+        }} price={30} />
       </div>
       <div>
         <Button>Checkout</Button>
