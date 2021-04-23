@@ -12,11 +12,11 @@
   }
 
 .Logo div {
-    --fill-color: slategray;
+    /* --fill-color: white;
     position: relative;
     display: block;
     /* font: 700 2rem Raleway, sans-serif; */
-    font: 700 2.5rem Syne Mono, monospace;
+    /*font: 700 2.5rem Syne Mono, monospace;
     font-family: 'Playfair Display', serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -24,7 +24,8 @@
     background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
     color: transparent;
     background-clip: text;
-    transition: 0.5s linear;
+    transition: 0.5s linear; */
+  
      
 }
 .Logo div:hover{

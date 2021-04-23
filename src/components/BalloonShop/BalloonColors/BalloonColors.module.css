@@ -2,13 +2,13 @@
   background-size: cover;
   margin-right: -17px;
   margin-bottom: 7px;
-  margin-top: 7px;
+  margin-top: -70px;
   display: flex;
   flex-direction: column;
 
   animation: animate 3s alternate infinite;
   animation: spin 1s ease-out 1;
-
+  z-index: -1;
 }
 
 @keyframes spin {
