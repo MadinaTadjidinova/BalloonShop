@@ -6,9 +6,8 @@
   flex-flow: row;
 }
 
-@media (max-width: 669px) {
+@media (max-width: 500px) {
   .Nav {
-    margin: 10px 0;
     flex-direction: column;
   }
 }

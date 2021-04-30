@@ -21,5 +21,7 @@
     .NavItem a {
       border: none;
       border-left: 3px solid transparent;
+      font-size: 25px;
     }
   }
+

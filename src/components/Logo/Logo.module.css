@@ -25,7 +25,7 @@
     color: transparent;
     background-clip: text;
     transition: 0.5s linear; */
-  
+  font-size: 40px;
      
 }
 .Logo div:hover{
@@ -39,7 +39,4 @@
     margin: .5rem;
   }
 
-.Logo div {
-    font: 600 2rem Raleway, sans-serif;
-}
 }
