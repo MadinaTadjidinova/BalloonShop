@@ -78,6 +78,7 @@ const BalloonShop = () => {
         colors={colors} 
       />
       <BalloonControls
+
         colors={colors}
         addColor={addColor}
         removeColor={removeColor}
