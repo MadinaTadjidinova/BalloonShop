@@ -1,43 +1,11 @@
- .BalloonControl {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: .7rem 0;
-  }
-
-  .BalloonControl button {
-    border: 0;
-    margin: 0 6rem;
-    border-radius: 100%;
-    background-color: #126b81;
-    padding: 5px 15px;
-    color: #fff;
-  }
-  .BalloonControl button:hover {
-    background-color: rgb(214, 23, 23);
-  }
-  .BalloonControl button:focus {
-    outline: none;
-  }
-
-  .BalloonControls {
-     display: none;
-  }
-
-  .plus{
-    text-align: center;
-    background: chartreuse ;
-  }
-  /* .plus[animate='1']{
-    text-align: center;
-    animation: spin 1s ease-in 1;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: translateY(350px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  } */
+.BalloonControl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .7rem 0;
+}
+.BalloonControl button {
+  border: 0;
+  margin: 0 6rem;
+  padding: 5px 15px;
+}

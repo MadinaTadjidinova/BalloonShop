@@ -1,20 +1,16 @@
-.Button {
+  .Button {
     border: 0;
     margin: 11px .5rem;
     padding: 0 1rem;
-    border-radius: 1rem;
-    color: white;
-    background-color: #126b81;
-    box-shadow: 0px 0px 12px rgb(230, 207, 207);
+    border-radius: 3rem;
+    background-color:white;
+    color:  #126b81;
     font-weight: bold;
     font-size: 1.5rem;
     cursor: pointer;
   }
   .Button:not(:disabled):hover {
-    border-color:white;
-    background-color:  #126b81;
-    
-    box-shadow: 0px 0px 12px rgb(230, 207, 207);
+    background-color: rgba(246, 246, 246, 0.876);
   }
   .Button:focus {
     outline: none;
