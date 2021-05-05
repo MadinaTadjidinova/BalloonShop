@@ -2,7 +2,9 @@ import Layout from "./components/Layout/Layout";
 import BalloonShop from "./components/BalloonShop/BalloonShop";
 import "./App.css";
 import Checkout from "./components/Checkout/Checkout";
-import { Route, Switch } from "react-router";
+
+import { Redirect, Route, Switch } from "react-router";
+import Orders from "./components/Orders/Orders";
 
 const App = () => {
   return (
@@ -11,9 +13,10 @@ const App = () => {
         <Switch>
         <Route path="/" component={BalloonShop} exact />
         <Route path="/checkout" component={Checkout} />
+        <Route path="orders" component={Orders} />
+        <Redirect to="/" />
         </Switch>
       </Layout>
-   
     </div>
   );
 }
