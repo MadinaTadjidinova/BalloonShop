@@ -1,12 +1,11 @@
 const initialState = {
 colors:{
-    red: 5,
-    green: 5,
-    yellow: 5,
-    blue: 5,
-    pink: 5,
-    purple: 5,
-    own: 5,
+    red: 1,
+    green: 1,
+    yellow: 1,
+    blue: 1,
+    pink: 1,
+    purple: 1,
 }, 
 price: 35
 };
@@ -18,7 +17,6 @@ const prices = {
     blue: 5,
     pink: 5,
     purple: 5,
-    own: 5,
   };
 
    const shopReducer = (state = initialState, action) => {
