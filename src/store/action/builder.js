@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../axios";
 import { ADD_COLOR, REMOVE_COLOR, SET__COLOR } from "./types";
 
 export const add = (color) => ({

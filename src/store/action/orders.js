@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../axios";
 import { SET_ORDERS } from "./types";
 
 export const set = (orders) => ({

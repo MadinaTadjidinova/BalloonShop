@@ -1,8 +1,9 @@
 import BalloonPreview from "../BalloonShop/BalloonPreview/BalloonPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
-import axios from "axios";
+import axios from "../../axios";
 import { useSelector } from "react-redux";
+import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
   const colors = useSelector(state => state.shop.colors);
@@ -38,4 +39,4 @@ const Checkout = ({ history }) => {
   );
 }
  
-export default Checkout;
+export default withAxios(Checkout, axios);

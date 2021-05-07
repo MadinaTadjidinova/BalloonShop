@@ -13,15 +13,18 @@ const BalloonControls = ({ colors, startOrdering }) => {
   }
 
   const [changeColor, setChangeColor] = useState(null);
-  console.log("colorPicker", changeColor);
 
   return (
     <div className={classes.BalloonControls}>
+
       <strong>Colors</strong>
+
       {results}
+
       <div className={classes.btn1}>
         <Button style={{ height: "38px", width: "44px" }}>+</Button>
       </div>
+
       <div className={classes.test}>
         <input
           className={classes.test}
@@ -30,6 +33,7 @@ const BalloonControls = ({ colors, startOrdering }) => {
           onChange={(chg) => setChangeColor(chg.target.value)}
         />
       </div>
+
       <div className={classes.btn2}>
         <Button style={{ height: "38px", width: "39px" }}>-</Button>
       </div>

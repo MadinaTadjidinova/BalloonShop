@@ -8,6 +8,7 @@ import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";
 import {useDispatch, useSelector } from "react-redux";
 import { load } from "../../store/action/builder";
+import withAxios from "../withAxios";
 
 const BalloonShop = ({history}) => {
   const dispatch = useDispatch()
@@ -70,4 +71,4 @@ const BalloonShop = ({history}) => {
   );
 };
 
-export default BalloonShop;
+export default withAxios(BalloonShop, axios);
