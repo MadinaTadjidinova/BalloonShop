@@ -12,7 +12,40 @@
   align-items: center;
   width: 300px;
 }
-.test{
-  width: 100px;
-  height: 100px;
+
+.test {
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 39px;
+  position: relative;
+  bottom: 24px;
 }
+.test::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+.test::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+}
+.btn1 {
+  position: relative;
+  top: 0px;
+  right: 114px;
+}
+.btn2 {
+  position: relative;
+  bottom: 96px;
+  left: 118px;
+  
+}
+.btn{
+  height: 38px;
+  width: 44px;
+}
+

@@ -25,3 +25,8 @@
   .green:not(:disabled):hover {
     background-color: rgb(49, 172, 0);
   }
+
+  .btn{
+    height: 38px;
+    width: 44px;
+  }
