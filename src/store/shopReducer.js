@@ -1,13 +1,8 @@
+import { ADD_COLOR, REMOVE_COLOR, SET__COLOR } from "./action/types";
 const initialState = {
 colors:{
-    red: 1,
-    green: 1,
-    yellow: 1,
-    blue: 1,
-    pink: 1,
-    purple: 1,
 }, 
-price: 35
+price: 0
 };
 
 const prices = {
@@ -17,20 +12,31 @@ const prices = {
     blue: 5,
     pink: 5,
     purple: 5,
+    ownColor: 5,
   };
 
    const shopReducer = (state = initialState, action) => {
     const newState = { ...state };
-  
+  function rem () {
+    newState.colors[action.color]--;
+    newState.price -= prices[action.color];
+  }
     switch (action.type) {
-      case "ADD_COLOR":
+      case ADD_COLOR:
         newState.colors[action.color]++;
         newState.price += prices[action.color];
         break;
-      case "REMOVE_COLOR":
-        newState.colors[action.color]--;
-        newState.price -= prices[action.color];
+      case REMOVE_COLOR:
+        setTimeout(  
+            rem()
+          ,
+          4000
+        )
         break;
+        case SET__COLOR:
+      newState.colors = action.data.colors;
+      newState.price = action.data.price;
+      break;
     
       default:
         break;
