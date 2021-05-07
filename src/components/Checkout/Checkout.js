@@ -23,6 +23,7 @@ const Checkout = ({ history }) => {
         blue: 1,
         pink: 1,
         purple: 1,
+        ownColor: 1,
       },
       price: 35,
     }).then(response => {
@@ -41,6 +42,7 @@ const Checkout = ({ history }) => {
           pink: 1,
           purple: 1,
           yellow:1,
+          ownColor:1,
         }} price={35} />
       <CheckoutForm
         cancelCallback={cancelCallback}
