@@ -8,7 +8,6 @@ const OrderSummary = ({ colors, price }) => {
     blue: "Green",
     pink: "Pink",
     purple: "Purple",
-    ownColor: "Own Color"
   }
   const results = Object.keys(colors)
     .map(type => <li>{labels[type]}: {colors[type]}</li>);

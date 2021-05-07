@@ -1,4 +1,4 @@
-import { ADD_COLOR, REMOVE_COLOR, SET__COLOR } from "./action/types";
+import { ADD_COLOR, REMOVE_COLOR, SET__COLOR } from "../action/types";
 const initialState = {
 colors:{
 }, 
@@ -12,10 +12,9 @@ const prices = {
     blue: 5,
     pink: 5,
     purple: 5,
-    ownColor: 5,
   };
 
-   const shopReducer = (state = initialState, action) => {
+   const shop = (state = initialState, action) => {
     const newState = { ...state };
   function rem () {
     newState.colors[action.color]--;
@@ -45,7 +44,7 @@ const prices = {
     return newState;
   }
   
-  export default shopReducer;
+  export default shop;
 
   
  

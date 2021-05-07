@@ -6,71 +6,45 @@ import axios from "axios";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";
+import {useDispatch, useSelector } from "react-redux";
+import { load } from "../../store/action/builder";
 
+const BalloonShop = ({history}) => {
+  const dispatch = useDispatch()
+  const colors = useSelector(state => state.shop.colors);
+  const price = useSelector(state => state.shop.price);
+  const [ordering, setOrdering] = useState(false);
 
-const BalloonShop = () => {
-  const prices = {
-    red: 5,
-    green: 5,
-    yellow: 5,
-    blue: 5,
-    pink: 5,
-    purple: 5,
-  };
-
-  const [colors, setColors] = useState({});
-  const [price, setPrice] = useState(0);
-  const [ordering, setOrdering] = useState();
-
-
+  // const [colors, setColors] = useState({});
+  // const [price, setPrice] = useState(0);
+  // const [ordering, setOrdering] = useState();
   
-  useEffect(loadDefaults, []);
+  useEffect(() => dispatch(load()), []);
 
-  function loadDefaults() {
-    axios
-      .get('https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json')
-      .then(response => {
-        setPrice(response.data.price);
-        setColors(response.data.colors);
-      });
-  }
-  function addColor(type) {
-    const newColors = { ...colors };
-    newColors[type]++;
-    setPrice(price + prices[type]);
-    setColors(newColors);
-  }
+  // function loadDefaults() {
+  //   axios
+  //     .get('https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json')
+  //     .then(response => {
+  //       setPrice(response.data.price);
+  //       setColors(response.data.colors);
+  //     });
+  // }
 
-  function removeColor(type) {
-    if (colors[type]) {
-      const newColors = { ...colors };
-      newColors[type]--;
-      setPrice(price - prices[type]);
-      setColors(newColors);
-    }
-  }
-
+ 
   function startOrdering() {
     setOrdering(true);
   }
   function stopOrdering() {
     setOrdering(false);
+    
   }
 
   function finishOrdering() {
-    axios
-      .post('https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json', {
-        colors: colors,
-        price: price,
-        address: "1234 Jusaeva str",
-        phone: "0 777 777 777",
-        name: "Sadyr Japarov",
-      })
-      .then(() => {
-        setOrdering(false);
-        loadDefaults();
-      });
+    setOrdering(false);
+    // loadDefaults();
+    history.push('/checkout');
   }
+
   return (
     <div className={classes.BalloonShop}>
       <BalloonPreview 
@@ -78,10 +52,7 @@ const BalloonShop = () => {
         colors={colors} 
       />
       <BalloonControls
-
         colors={colors}
-        addColor={addColor}
-        removeColor={removeColor}
         startOrdering={startOrdering}
       />
       <Modal 

@@ -2,9 +2,12 @@ import BalloonPreview from "../BalloonShop/BalloonPreview/BalloonPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "axios";
-
+import { useSelector } from "react-redux";
 
 const Checkout = ({ history }) => {
+  const colors = useSelector(state => state.shop.colors);
+  const price = useSelector(state => state.shop.price);
+
   function cancelCallback() {
     history.replace('/');
   }
@@ -16,16 +19,8 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
-      colors: {
-        red: 1,
-        green: 1,
-        yellow: 1,
-        blue: 1,
-        pink: 1,
-        purple: 1,
-        ownColor: 1,
-      },
-      price: 35,
+      colors: colors,
+      price: price,
     }).then(response => {
       history.replace('/');
     });
@@ -35,15 +30,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div className={classes.Checkout}>
-     <BalloonPreview colors={{
-          red: 1, 
-          blue: 1,
-          green: 1,
-          pink: 1,
-          purple: 1,
-          yellow:1,
-          ownColor:1,
-        }} price={35} />
+     <BalloonPreview colors={colors} price={price} />
       <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />

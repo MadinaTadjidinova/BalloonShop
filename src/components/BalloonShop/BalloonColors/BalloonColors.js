@@ -8,7 +8,7 @@ import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
 import purpleBackground from "../../../images/purple_balloon.png";
 
-const BalloonColors = ({ type }) => {
+const BalloonColors = ({ type, changeColor }) => {
   const types = {
     red: {
       backgroundImage: `url(${redBackground})`,
@@ -44,7 +44,7 @@ const BalloonColors = ({ type }) => {
 
   return (
     <div className={classes.BalloonColors} style={types[type]}>
-      <div className={classes.animation}></div>
+      <div className="animation"></div>
     </div>
   );
 };
@@ -86,6 +86,12 @@ export default React.memo(BalloonColors);
 // }
 
 // export default React.memo(BalloonColors);
+
+
+
+
+
+
 
 // import React, { memo } from "react";
 // import classes from "./BalloonColors.module.css";
