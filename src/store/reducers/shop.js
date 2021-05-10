@@ -15,17 +15,15 @@ const prices = {
 
 const shop = (state = initialState, action) => {
   const newState = { ...state };
-  function rem() {
-    newState.colors[action.color]--;
-    newState.price -= prices[action.color];
-  }
+    
   switch (action.type) {
     case ADD_COLOR:
       newState.colors[action.color]++;
       newState.price += prices[action.color];
       break;
     case REMOVE_COLOR:
-      setTimeout(rem(), 4000);
+      newState.colors[action.color]--;
+      newState.price -= prices[action.color];
       break;
     case SET__COLOR:
       newState.colors = action.data.colors;
