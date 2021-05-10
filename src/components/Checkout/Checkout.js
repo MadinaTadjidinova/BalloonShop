@@ -24,7 +24,7 @@ const Checkout = ({ history }) => {
         colors: colors,
         price: price,
       })
-      .then((response) => {
+      .then(response => {
         history.replace("/");
       });
 
