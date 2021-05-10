@@ -1,10 +1,10 @@
-.BalloonPreview{
+.BalloonPreview {
   width: 650px;
   margin-right: 1rem;
   margin-bottom: 1rem;
   border-radius: 20px;
 }
-.colors{
+.colors {
   display: flex;
   flex-wrap: wrap;
   padding-left: 30px;
@@ -12,22 +12,21 @@
   padding-top: 100px;
 }
 
-.balloon{
-display: flex;
-flex-wrap: wrap;
-margin: 5px;
-padding-left: 18px;;
+.balloon {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding-left: 18px;
 }
-.price{
-/* background-color:  rgb(0, 255, 221); */
-max-width: 250px;
-margin: 0 auto;
-text-align: center;
-color: slategray;
-font-size: 32px;
-padding: 5px;
-margin-bottom: 2rem;
-border-radius: 10px;
+.price {
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  color: slategray;
+  font-size: 32px;
+  padding: 5px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
 }
 
 @media (max-width: 1020px) {
@@ -40,31 +39,3 @@ border-radius: 10px;
     margin-top: 1rem;
   }
 }
-
-  
-
-/* //random
-.BalloonPreview {
-  flex: 0 0 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.balloon {
-  width: 400px;
-  height: 400px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 10%;
-  background-color: rgb(0, 255, 221);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.colors {
-  width: 380px;
-  height: 380px;
-  border-radius: 10px;
-  position: relative;
-} */

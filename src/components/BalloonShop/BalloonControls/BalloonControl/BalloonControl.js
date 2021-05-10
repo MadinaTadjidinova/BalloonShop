@@ -39,7 +39,7 @@ const BalloonControl = ({ type, count }) => {
     },
     green: {
       width: "50px",
-      height: "50px",
+      height: "50 px",
       backgroundColor: "green",
       borderRadius: "50%",
       border: "3px soild red",
@@ -56,10 +56,9 @@ const BalloonControl = ({ type, count }) => {
     <div className={classes.BalloonControl} style={types[type]}>
       <Button onClick={() => dispatch(add(type))}>+</Button>
 
-      <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>
-
-      {/* <Button className='minus' onClick={() => {removecolor(type); playExp()}, setAnimate(0) }onAnimationEnd={() => setAnimate(0)}
-      animate={animate}>-</Button> */}
+      <Button onClick={() => dispatch(remove(type))} disabled={!count}>
+        -
+      </Button>
     </div>
   );
 };

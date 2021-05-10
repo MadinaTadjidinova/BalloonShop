@@ -16,7 +16,6 @@ const BalloonControls = ({ colors, startOrdering }) => {
 
   return (
     <div className={classes.BalloonControls}>
-
       <strong>Colors</strong>
 
       {results}

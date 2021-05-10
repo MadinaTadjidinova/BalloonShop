@@ -8,7 +8,6 @@ const Logo = () => {
       <div>Balloon</div>
     </div>
   );
-}
+};
 
 export default Logo;
-

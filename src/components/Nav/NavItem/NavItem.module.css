@@ -1,31 +1,31 @@
 .NavItem a {
   display: flex;
   align-items: center;
-  padding: .5rem 1rem .35rem;
+  padding: 0.5rem 1rem 0.35rem;
   height: 80px;
   text-decoration: none;
   color: white;
   border-bottom: 5px solid transparent;
   transition: all 0.2s ease-in-out;
+}
+.NavItem a:hover {
+  border-color: slategray;
+  background-color: rgba(61, 60, 60, 0.1);
+}
+.NavItem a:focus,
+.NavItem a.active {
+  border-color: slategray;
+  background-color: rgba(61, 60, 60, 0.1);
+}
+@media (max-width: 549px) {
+  .NavItem a {
+    border: none;
+    border-left: 10px solid transparent;
+    font-size: 25px;
   }
-  .NavItem a:hover {
-    border-color:slategray;
-    background-color: rgba(61, 60, 60, 0.1);
+}
+@media (max-width: 660px) {
+  .NavItem a {
+    font-size: 25px;
   }
-  .NavItem a:focus,
-  .NavItem a.active {
-    border-color: slategray;
-    background-color: rgba(61, 60, 60, 0.1);
-  }
-  @media (max-width: 549px) {
-    .NavItem a {
-      border: none;
-      border-left: 10px solid transparent;
-      font-size: 25px;
-    }
-  }
-  @media (max-width: 660px) {
-    .NavItem a {
-      font-size: 25px;
-    }
-  }
+}
