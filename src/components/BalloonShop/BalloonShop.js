@@ -7,7 +7,7 @@ import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { load } from "../../store/action/builder";
+import { load } from "../../store/action/shop";
 import withAxios from "../withAxios";
 
 const BalloonShop = ({ history }) => {
@@ -37,7 +37,7 @@ const BalloonShop = ({ history }) => {
       <BalloonControls colors={colors} startOrdering={startOrdering} />
       <Modal show={ordering} cancel={stopOrdering}>
         <OrderSummary colors={colors} price={price} />
-        <Button onClick={finishOrdering} green>
+        <Button onClick={finishOrdering} green="green">
           Checkout
         </Button>
         <Button onClick={stopOrdering}>Cancel</Button>

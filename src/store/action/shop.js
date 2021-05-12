@@ -6,6 +6,7 @@ export const add = (color) => ({
   color: color,
 });
 
+
 export const remove = (color) => ({
   type: REMOVE_COLOR,
   color: color,

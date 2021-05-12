@@ -1,12 +1,9 @@
 import { useDispatch } from "react-redux";
-import { add, remove } from "../../../../store/action/builder";
+import { add, remove } from "../../../../store/action/shop";
 import Button from "../../../UI/Button/Button";
-import BalloonColors from "../../BalloonColors/BalloonColors";
 import classes from "../BalloonControl/BalloonControl.module.css";
 
 const BalloonControl = ({ type, count }) => {
-  function outAnimation() {}
-
   const dispatch = useDispatch();
   const types = {
     red: {

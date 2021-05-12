@@ -1,7 +1,7 @@
 import axios from "../../axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { load } from "../../store/action/builder";
+import { load } from "../../store/action/shop";
 import Order from "./Order/Order";
 import classes from "./Orders.module.css";
 import withAxios from "../withAxios";
@@ -12,7 +12,7 @@ const Orders = () => {
 
   useEffect(() => {
     dispatch(load());
-  }, []);
+  }, [dispatch]);
 
   const results = orders.map((order) => <Order key={order.id} {...order} />);
 

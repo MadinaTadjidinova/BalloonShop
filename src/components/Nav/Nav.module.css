@@ -1,9 +1,8 @@
 .Nav {
   display: flex;
   list-style-type: none;
-  margin: 0 10px;
+  margin: 0;
   padding: 0;
-  flex-flow: row;
 }
 
 @media (max-width: 549px) {

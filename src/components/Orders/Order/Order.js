@@ -2,7 +2,7 @@ import classes from "./Order.module.css";
 
 const Order = ({ name, phone, address, colors, price }) => {
   const outputColors = Object.keys(colors).map((color) => (
-    <em>
+    <em key={color}>
       {color} - {colors[color]}
     </em>
   ));

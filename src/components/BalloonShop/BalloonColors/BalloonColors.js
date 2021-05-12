@@ -40,14 +40,23 @@ const BalloonColors = ({ type }) => {
       width: "50px",
       height: "170px",
     },
+    custom: {
+      width: "100px",
+      height: "10px",
+    },
   };
+  // let custom = {
+  //   own: {
+  //     width: "50px",
+  //     height: "170px",
+  //   }
+  // }
+  let custom = "test";
+  if (types[type]) {
+    custom = <div className={classes.BalloonColors} style={types[type]}></div>;
+  }
 
-  return (
-    <div className={classes.BalloonColors} style={types[type]}>
-     
-    </div>
-  );
+  return <div>{custom}</div>;
 };
 
 export default React.memo(BalloonColors);
-
