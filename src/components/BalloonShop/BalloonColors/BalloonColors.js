@@ -43,6 +43,7 @@ const BalloonColors = ({ type }) => {
     custom: {
       width: "100px",
       height: "10px",
+      background: 'red'
     },
   };
   // let custom = {
@@ -53,7 +54,7 @@ const BalloonColors = ({ type }) => {
   // }
   let custom = "test";
   if (types[type]) {
-    custom = <div className={classes.BalloonColors} style={types[type]}></div>;
+    custom = <div className={classes.BalloonColors} ><div className={classes.Balloon} style={types[type]}></div></div>;
   }
 
   return <div>{custom}</div>;
