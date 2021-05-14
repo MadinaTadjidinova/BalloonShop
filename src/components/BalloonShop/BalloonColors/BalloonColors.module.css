@@ -1,11 +1,14 @@
-.BalloonColors {
+.BalloonColors{
+  animation: animate 3s alternate infinite;
+
+}
+.Balloon {
   background-size: cover;
   margin-right: -17px;
   margin-bottom: 7px;
   margin-top: -70px;
   display: flex;
   flex-direction: column;
-  animation: animate 3s alternate infinite;
   animation: spin 1s ease-out 1;
   z-index: -1;
 }
@@ -19,9 +22,9 @@
   }
 }
 
-/* @keyframes animate {
+@keyframes animate {
   0% {
-    transform: 
+    transform: translateX(0px);
   }
   50% {
     transform: translateX(-30px);
@@ -30,4 +33,4 @@
     transform: translateX(0px);
   }
 }
- */
+
