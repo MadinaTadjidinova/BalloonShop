@@ -11,7 +11,7 @@ const BalloonPreview = ({ colors, price }) => {
   }
 
   return (
-    <div>
+    <div className={classes.Preview}>
       <div className={classes.BalloonPreview}>
         <div className={classes.colors}>{result}</div>
       </div>
