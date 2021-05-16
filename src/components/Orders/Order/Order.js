@@ -1,11 +1,12 @@
 import classes from "./Order.module.css";
 
 const Order = ({ name, phone, address, colors, price }) => {
-  const outputColors = Object.keys(colors).map((color) => (
+  const outputColors = Object.keys(colors).map(color => 
     <em key={color}>
       {color} - {colors[color]}
     </em>
-  ));
+  );
+  console.log(outputColors)
   return (
     <div className={classes.Order}>
       <div>

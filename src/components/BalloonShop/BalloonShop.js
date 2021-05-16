@@ -12,11 +12,11 @@ import withAxios from "../withAxios";
 
 const BalloonShop = ({ history }) => {
   const dispatch = useDispatch();
-  const colors = useSelector((state) => state.shop.colors);
-  const price = useSelector((state) => state.shop.price);
+  const colors = useSelector(state => state.shop.colors);
+  const price = useSelector(state => state.shop.price);
   const [ordering, setOrdering] = useState(false);
 
-  useEffect(() => dispatch(load()), []);
+  useEffect(() => dispatch(load()), [dispatch]);
 
   function startOrdering() {
     setOrdering(true);
