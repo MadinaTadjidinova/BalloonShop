@@ -8,9 +8,7 @@ export const set = (orders) => ({
 
 export const load = () => {
   return (dispatch) =>
-    axios
-      .get("https://builder-69f8f-default-rtdb.firebaseio.com/defoult.json")
-      .then((response) => {
+    axios.get("/orders.json").then((response) => {
         const newOrders = Object.keys(response.data).map((id) => {
           return {
             ...response.data[id],

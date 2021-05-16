@@ -1,4 +1,5 @@
-import { ADD_COLOR, REMOVE_COLOR, SET__COLOR } from "../action/types";
+import { ADD_COLOR, REMOVE_COLOR, SET_COLORS } from "../action/types";
+
 const initialState = {
   colors: {},
   price: 0,
@@ -28,7 +29,7 @@ const shop = (state = initialState, action) => {
       newState.colors[action.color]--;
       newState.price -= prices[action.color] ? prices[action.color] : prices['custom'];
       break;
-    case SET__COLOR:
+    case SET_COLORS:
       newState.colors = action.data.colors;
       newState.price = action.data.price;
       break;

@@ -20,7 +20,7 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
   const [changeColor, setChangeColor] = useState(0);
   return (
     <div className={classes.BalloonControls}>
-      <strong>Colors</strong>
+      <strong className={classes.strong}>Colors</strong>
 
       {results}
 
