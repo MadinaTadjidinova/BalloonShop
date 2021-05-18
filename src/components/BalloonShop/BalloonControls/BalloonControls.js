@@ -17,7 +17,7 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
     );
   }
 
-  const [changeColor, setChangeColor] = useState(0);
+  const [changeColor, setChangeColor] = useState("#000000");
   return (
     <div className={classes.BalloonControls}>
       <strong className={classes.strong}>Colors</strong>

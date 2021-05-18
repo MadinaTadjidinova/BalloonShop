@@ -21,7 +21,8 @@ const shop = (state = initialState, action) => {
   switch (action.type) {
     case ADD_COLOR:
       console.log(action.color);
-      newState.colors[action.color]++;
+      newState.colors[action.color] = newState.colors[action.color]
+        ? newState.colors[action.color] + 1 : 1;
       newState.price += prices[action.color] ? prices[action.color] : prices['custom'];
       break;
     case REMOVE_COLOR:

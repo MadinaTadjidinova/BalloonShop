@@ -41,10 +41,11 @@ const BalloonColors = ({ type }) => {
       height: "170px",
     },
     custom: {
-      width: "100px",
-      height: "10px",
-      background: 'red'
+      backgroundImage: `url(${purpleBackground})`,
+      width: "50px",
+      height: "170px",
     },
+
   };
   // let custom = {
   //   own: {
@@ -52,9 +53,9 @@ const BalloonColors = ({ type }) => {
   //     height: "170px",
   //   }
   // }
-  let custom = "test";
+  let custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={{ ...types['custom'] }}></div></div>;
   if (types[type]) {
-    custom = <div className={classes.BalloonColors} ><div className={classes.Balloon} style={types[type]}></div></div>;
+    custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={types[type]}></div></div>;
   }
 
   return <div>{custom}</div>;

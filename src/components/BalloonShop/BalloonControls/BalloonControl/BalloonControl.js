@@ -1,4 +1,5 @@
 import { useDispatch } from "react-redux";
+import { keyframes } from "styled-components";
 import { add, remove } from "../../../../store/action/shop";
 import Button from "../../../UI/Button/Button";
 import classes from "../BalloonControl/BalloonControl.module.css";
@@ -50,6 +51,7 @@ const BalloonControl = ({ type, count }) => {
     },
     
   };
+  
   return (
     <div className={classes.BalloonControl} style={types[type]}>
       <Button onClick={() => dispatch(add(type))}>+</Button>
