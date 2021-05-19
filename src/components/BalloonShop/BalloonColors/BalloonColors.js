@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import classes from "./BalloonColors.module.css";
 import redBackground from "../../../images/red_balloon.svg";
@@ -7,8 +7,11 @@ import pinkBackground from "../../../images/pink_balloon.svg";
 import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
 import purpleBackground from "../../../images/purple_balloon.png";
+import Color from "./Color/Color"
 
 const BalloonColors = ({ type }) => {
+  const [colors,setColors] = useState("#0000ff");
+
   const types = {
     red: {
       backgroundImage: `url(${redBackground})`,
@@ -41,24 +44,32 @@ const BalloonColors = ({ type }) => {
       height: "170px",
     },
     custom: {
-      backgroundImage: `url(${purpleBackground})`,
+      background: colors,
       width: "50px",
       height: "170px",
     },
-
   };
+
+
+  
   // let custom = {
   //   own: {
   //     width: "50px",
   //     height: "170px",
   //   }
   // }
+  
   let custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={{ ...types['custom'] }}></div></div>;
   if (types[type]) {
     custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={types[type]}></div></div>;
   }
 
-  return <div>{custom}</div>;
+  return (<div>
+    {custom}
+
+  </div>
+    
+    );
 };
 
 export default React.memo(BalloonColors);

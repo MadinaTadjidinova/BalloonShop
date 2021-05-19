@@ -18,6 +18,9 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
   }
 
   const [changeColor, setChangeColor] = useState("#000000");
+  function updateAll(event){
+    setChangeColor(event.target.value)
+  }
   return (
     <div className={classes.BalloonControls}>
       <strong className={classes.strong}>Colors</strong>
@@ -38,7 +41,7 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
           className={classes.test}
           type="color"
           value={changeColor}
-          onChange={(event) => setChangeColor(event.target.value)}
+          onChange={(event) => updateAll(event)}
         />
       </div>
 
