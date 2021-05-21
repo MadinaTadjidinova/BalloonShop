@@ -12,6 +12,7 @@ import withAxios from "../withAxios";
 
 const BalloonShop = ({ history }) => {
   const dispatch = useDispatch();
+  const isAuthenticated = useSelector(state => state.auth.token !== null);
   const colors = useSelector(state => state.shop.colors);
   const price = useSelector(state => state.shop.price);
   const [ordering, setOrdering] = useState(false);
@@ -19,7 +20,12 @@ const BalloonShop = ({ history }) => {
   useEffect(() => dispatch(load()), [dispatch]);
 
   function startOrdering() {
-    setOrdering(true);
+    if(isAuthenticated) {
+      setOrdering(true);
+    }
+    else {
+      history.push('/auth')
+    }
   }
   function stopOrdering() {
     setOrdering(false);
