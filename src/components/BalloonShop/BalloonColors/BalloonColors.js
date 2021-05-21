@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import classes from "./BalloonColors.module.css";
 import redBackground from "../../../images/red_balloon.svg";
 import yellowBackground from "../../../images/yellow_balloon.svg";
