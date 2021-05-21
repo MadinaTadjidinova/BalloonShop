@@ -9,7 +9,6 @@ import blueBackground from "../../../images/blue_balloon.svg";
 import purpleBackground from "../../../images/purple_balloon.png";
 
 const BalloonColors = ({ type }) => {
-  const [colors,setColors] = useState('red');
 
   const types = {
     red: {
@@ -43,7 +42,7 @@ const BalloonColors = ({ type }) => {
       height: "170px",
     },
     custom: {
-      background: colors,
+      background: 'red',
       width: "50px",
       height: "170px",
     },
