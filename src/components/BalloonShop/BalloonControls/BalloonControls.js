@@ -17,20 +17,18 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
     );
   }
 
-  const [changeColor, setChangeColor] = useState("#000000");
-  function updateAll(event){
-    setChangeColor(event.target.value)
-  }
+  const [changeColor, setChangeColor] = useState(0);
   return (
     <div className={classes.BalloonControls}>
-      <strong className={classes.strong}>Colors</strong>
+      <strong>Colors</strong>
 
       {results}
 
-      <div className={classes.btn1}>
+      {/* <div className={classes.btn1}>
         <Button
           style={{ height: "38px", width: "44px" }}
           onClick={() => dispatch(add(changeColor))}
+          disabled={!count}
         >
           +
         </Button>
@@ -41,7 +39,7 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
           className={classes.test}
           type="color"
           value={changeColor}
-          onChange={(event) => updateAll(event)}
+          onChange={(event) => setChangeColor(event.target.value)}
         />
       </div>
 
@@ -53,10 +51,9 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
         >
           -
         </Button>
-      </div>
+      </div> */}
 
-      <Button
-        style={{ position: "relative", bottom: "90px" }}
+      <Button   
         className={classes.order}
         disabled={!total}
         onClick={startOrdering}
