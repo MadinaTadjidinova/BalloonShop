@@ -5,10 +5,8 @@ import pinkBackground from "../../../images/pink_balloon.svg";
 import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
 import purpleBackground from "../../../images/purple_balloon.png";
-import React, { useState } from 'react'
 
 const BalloonColors = ({ type }) => {
-  const [color, setColor] = useState('red')
 
   const types = {
     red: {
