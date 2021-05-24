@@ -1,7 +1,5 @@
 .Orders{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    font-size: 1rem;
-    line-height: 55px;
-    border: 4px solid red;
-    }
+}
