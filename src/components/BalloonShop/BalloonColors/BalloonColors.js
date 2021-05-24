@@ -5,9 +5,10 @@ import pinkBackground from "../../../images/pink_balloon.svg";
 import greenBackground from "../../../images/green_balloon.svg";
 import blueBackground from "../../../images/blue_balloon.svg";
 import purpleBackground from "../../../images/purple_balloon.png";
-import React from 'react'
+import React, { useState } from 'react'
 
 const BalloonColors = ({ type }) => {
+  const [color, setColor] = useState('red')
 
   const types = {
     red: {
@@ -41,13 +42,13 @@ const BalloonColors = ({ type }) => {
       height: "170px",
     },
     custom: {
-      background: 'red',
+      background: color,
       width: "50px",
-      height: "170px",
+      height: "95px",
+      borderRadius: "40px",
+      border: '1px solid black'
     },
   };
-
-
   
   // let custom = {
   //   own: {
