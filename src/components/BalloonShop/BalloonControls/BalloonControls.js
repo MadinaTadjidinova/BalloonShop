@@ -1,11 +1,9 @@
 import Button from "../../UI/Button/Button";
 import BalloonControl from "./BalloonControl/BalloonControl";
 import { useDispatch } from "react-redux";
-import { add, remove } from "../../../store/action/shop";
 import classes from "./BalloonControls.module.css";
 import { useState } from "react";
-const BalloonControls = ({ colors, startOrdering, count }) => {
-  const dispatch = useDispatch();
+const BalloonControls = ({ colors, startOrdering}) => {
   const results = [];
   let total = 0;
   const predColors = ["blue", "green", "pink", "purple", "red", "yellow"];
@@ -16,8 +14,6 @@ const BalloonControls = ({ colors, startOrdering, count }) => {
       <BalloonControl key={color} count={colors[color]} type={color} />
     );
   }
-
-  const [changeColor, setChangeColor] = useState(0);
   return (
     <div className={classes.BalloonControls}>
       <strong>Colors</strong>
