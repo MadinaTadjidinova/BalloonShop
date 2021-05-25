@@ -1,8 +1,6 @@
 import Button from "../../UI/Button/Button";
 import BalloonControl from "./BalloonControl/BalloonControl";
-import { useDispatch } from "react-redux";
 import classes from "./BalloonControls.module.css";
-import { useState } from "react";
 const BalloonControls = ({ colors, startOrdering}) => {
   const results = [];
   let total = 0;
