@@ -16,8 +16,7 @@ const Orders = () => {
   const results = orders.map(order => <Order key={order.id} {...order} />);
 
   return (
-    <div className={classes.Orders}>
-      {results}
+    <div className={classes.Orders}>{results}
     </div>
   );
 }

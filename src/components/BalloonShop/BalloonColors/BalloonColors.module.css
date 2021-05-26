@@ -9,13 +9,13 @@
   margin-top: -70px;
   display: flex;
   flex-direction: column;
-  animation: spin 1s ease-out 1;
+  animation: spin 1.2s ease-out 1;
   z-index: -1;
 }
 
 @keyframes spin {
   0% {
-    transform: translateY(340px);
+    transform: translateY(380px);
   }
   100% {
     transform: translateY(0px);

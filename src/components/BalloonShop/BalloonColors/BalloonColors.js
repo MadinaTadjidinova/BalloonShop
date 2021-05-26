@@ -40,21 +40,8 @@ const BalloonColors = ({ type }) => {
       width: "50px",
       height: "170px",
     },
-    custom: {
-      background: "red",
-      width: "50px",
-      height: "95px",
-      borderRadius: "40px",
-      border: '1px solid black'
-    },
   };
   
-  // let custom = {
-  //   own: {
-  //     width: "50px",
-  //     height: "170px",
-  //   }
-  // }
   
   let custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={{ ...types['custom'] }}></div></div>;
   if (types[type]) {

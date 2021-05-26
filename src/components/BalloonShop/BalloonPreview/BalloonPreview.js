@@ -3,7 +3,7 @@ import classes from "./BalloonPreview.module.css";
 
 const BalloonPreview = ({ colors, price }) => {
   const result = [];
-console.log(colors);
+// console.log(colors);
   for (const color in colors) {
     for (let i = 0; i < colors[color]; i++) {
       result.push(<BalloonColors key={color + i} type={color} />);

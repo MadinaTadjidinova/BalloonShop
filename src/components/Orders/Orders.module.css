@@ -1,5 +1,10 @@
-.Orders{
+.Orders {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    flex-flow: row wrap;
+    padding: 0.5em;
+    max-width: 950px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+  
