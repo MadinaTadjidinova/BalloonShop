@@ -17,17 +17,35 @@ const prices = {
 const shop = (state = initialState, action) => {
   const newState = { ...state };
     
+  // switch (action.type) {
+  //   case ADD_COLOR:
+  //     // console.log(action.color);
+  //     newState.colors[action.color] = newState.colors[action.color]
+  //       ? newState.colors[action.color] + 1 : 1;
+  //     newState.price += prices[action.color] ? prices[action.color] : prices['custom'];
+  //     break;
+  //   case REMOVE_COLOR:
+  //     // console.log(action.color);
+  //     newState.colors[action.color]--;
+  //     newState.price -= prices[action.color] ? prices[action.color] : prices['custom'];
+  //     break;
+  //   case SET_COLORS:
+  //     newState.colors = action.data.colors;
+  //     newState.price = action.data.price;
+  //     break;
+
+  //   default:
+  //     break;
+  // }
+
   switch (action.type) {
     case ADD_COLOR:
-      // console.log(action.color);
-      newState.colors[action.color] = newState.colors[action.color]
-        ? newState.colors[action.color] + 1 : 1;
-      newState.price += prices[action.color] ? prices[action.color] : prices['custom'];
+      newState.colors[action.color]++;
+      newState.price += prices[action.color];
       break;
     case REMOVE_COLOR:
-      // console.log(action.color);
       newState.colors[action.color]--;
-      newState.price -= prices[action.color] ? prices[action.color] : prices['custom'];
+      newState.price -= prices[action.color];
       break;
     case SET_COLORS:
       newState.colors = action.data.colors;

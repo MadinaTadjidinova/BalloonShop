@@ -43,17 +43,19 @@ const BalloonColors = ({ type }) => {
   };
   
   
-  let custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={{ ...types['custom'] }}></div></div>;
-  if (types[type]) {
-    custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={types[type]}></div></div>;
-  }
+  // let custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={{ ...types['custom'] }}></div></div>;
+  // if (types[type]) {
+  //   custom = <div className={classes.BalloonColors}><div className={classes.Balloon} style={types[type]}></div></div>;
+  // }
 
-  return (<div>
-    {custom}
+  // return (<div>
+  //   {custom}
 
-  </div>
+  // </div>
     
-    );
+  //   );
+
+  return <div className={classes.BalloonColors}><div className={classes.Balloon} style={types[type]}></div></div>;
 };
 
 export default React.memo(BalloonColors);
